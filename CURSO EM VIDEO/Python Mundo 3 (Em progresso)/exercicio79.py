@@ -7,6 +7,9 @@ while True:
         valores.append(num)
         print('Valor adicionado com sucesso...')
     resp = input('Quer continuar? [S/N] \nR: ').upper()[0]
+    while resp != 'S' and resp !='N':
+        print("Digite uma opção válida!", end=' ')
+        resp = input('Quer continuar? [S/N] \nR: ').upper()[0]
     if resp == 'N':
         break
-print(valores)
+print(sorted(valores))
