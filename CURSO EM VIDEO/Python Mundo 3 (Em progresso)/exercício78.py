@@ -1,9 +1,23 @@
 valores = []
+mai = men = 0
 for cont in range(0,5):
      valores.append(int(input(f'Digite um valor na posição {cont}: ')))
-# for c in range(0,len(valores)):
-#      if c % 2 == 0:
-#           print(valores[c], end = ' ')
-print(valores)
-print(f'O maior valor digitado foi {max(valores)}, na posição {valores.index(max(valores))}')
-print(f'O menor valor digitado foi {min(valores)}, na posição {valores.index(min(valores))}')
+     if cont == 0:
+          mai = men = valores[cont]
+     else:
+          if valores[cont] > mai:
+               mai = valores[cont]
+          if valores[cont] < men:
+               men = valores[cont]
+print('=-'*20)
+print(f'Você digitou os valores {valores}')
+print(f'O maior valor digitado foi {mai} nas posições ', end='')
+for i, v in enumerate(valores):
+     if v == mai:
+          print(f'{i}...', end='')
+print()
+print(f'O menor valor digitado foi {men}  nas posições ', end='')
+for i, v in enumerate(valores):
+     if v == men:
+          print(f'{i}...', end='')
+print()
