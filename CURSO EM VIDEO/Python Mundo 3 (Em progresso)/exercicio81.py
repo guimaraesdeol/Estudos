@@ -7,8 +7,9 @@ while True:
         resp = input('Quer continuar? [S/N] \nR: ').upper()[0]
     if resp == 'N':
         break
+lista.sort(reverse=True)
 print(f'Foram digitados {len(lista)} números.')
-print(f'Valores na ordem crescente: {sorted(lista)}')
+print(f'Valores na ordem decrescente: {lista}')
 if 5 in lista:
     print('O valor 5 está na lista!')
 else:
