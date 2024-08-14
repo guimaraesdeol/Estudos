@@ -1,4 +1,4 @@
-# include <stdio.h> //  ATIVIDADE 4 ANA LUCIA, ALUNO EDUARDO G OLIVEIRA
+# include <stdio.h> //  ATIVIDADE 4 
 
 int main()
 {

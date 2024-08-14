@@ -1,4 +1,4 @@
-# include <stdio.h> // EXERCICIO NUMERO 1 ANA LUCIA, ALUNO EDUARDO G OLIVEIRA
+# include <stdio.h> // EXERCICIO NUMERO 1 
 int main()
 {
     float lquintal, cquintal, lpiscina, cpiscina, areaquintal, areapiscina, arealivre;
