@@ -18,7 +18,7 @@ int main()
     printf("A area do quintal e %f \n", areaquintal);
     printf("A area da piscina e %f \n", areapiscina);
     printf("A area da livre e %f \n", arealivre );
-     // TESTESTESTEWTSA
+     // TESTESTESTE
 
 
 }
