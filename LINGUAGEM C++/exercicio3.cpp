@@ -3,22 +3,35 @@
 #include <iostream>
 using namespace std;
 
-//int calcular(int num1, int num2);
+float calcular(int num1, int num2);
 
 int main(){
     int num1, num2;
-    cout<<"Digite o primeiro numero inteiro: ";
-    cin>>num1;
-    cout<<"Digite o segundo numero inteiro: ";
-    cin>>num2;
- //   calcular(num1, num2);
+    while(true){
+        cout<<"Digite o primeiro numero inteiro: ";
+        cin>>num1;
+        cout<<"Digite o segundo numero inteiro: ";
+        cin>>num2; 
+        if(num1 != num2){
+            break;
+        }else{
+            cout<< "Os numeros nao podem ser iguais." << endl;
+        }
+    }
+    calcular(num1, num2);
 
 
 
 }
 
-//int calcular(int num1, int num2){
+float calcular(int num1, int num2){
     //Soma
-//    cout << "Soma: " << num1+num2 << endl;
- //   return 0;
-//}
+    cout << "Soma: " << num1+num2 << endl;
+    cout << "Subtracao: " << num1-num2 << endl;
+    if(num1>num2){
+        cout << "Divisao: " << num1/num2 << endl;
+    }else{
+        cout << "Divisao: " << num2/num1 << endl; 
+    }
+    return 0;
+}
